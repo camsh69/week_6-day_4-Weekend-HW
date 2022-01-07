@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/app.js"></script>
+    <title>Guitar List</title>
+</head>
+
+<body>
+    <form id="new-item-form">
+        <div id="form-wrapper">
+            <div class="form-item">
+                <label for="model" class="primary">Model</label>
+                <input type="text" id="model" required />
+            </div>
+
+            <div class="form-item">
+                <label for="colour" class="primary">Colour</label>
+                <input type="text" id="colour" required />
+            </div>
+
+            <div class="form-item">
+                <label for="manufacturer" class="primary">Manufacturer</label>
+                <select id="manufacturer">
+                    <option value="" disabled selected></option>
+                    <option value="Fender">Fender</option>
+                    <option value="Gibson">Gibson</option>
+                    <option value="Gretsch">Gretsch</option>
+                </select>
+            </div>
+
+            <div class="radio">
+                <label for="new" class="primary">New</label>
+                <input type="radio" name="condition" id="New" value="New" required>&nbsp; &nbsp;
+                <label for="new" class="primary">Used</label>
+                <input type="radio" name="condition" id="Used" value="Used">
+
+            </div>
+        </div>
+        <input type="submit" value="Save" />
+    </form>
+
+    <button id="delete-all">Delete All</button>
+
+    <h1>Guitar List</h1>
+    <ul id="guitar-list"></ul>
+
+</body>
+
+</html>
