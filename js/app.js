@@ -15,7 +15,7 @@ const handleFormSubmit = function(event) {
     console.log(this);
 
     const list = document.querySelector('#guitar-list');
-    
+
     const listItem = document.createElement('li');
     listItem.classList.add('list-item');
     list.appendChild(listItem);
@@ -36,7 +36,7 @@ const handleFormSubmit = function(event) {
     condition.textContent = `Condition: ${this.condition.value}`;
     listItem. appendChild(condition);
 
-    event.target.reset();
+    this.reset();
 }
 
 const handleButtonClick = function() {
